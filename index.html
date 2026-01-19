@@ -209,6 +209,45 @@ footer{padding:40px 0;color:var(--muted);font-size:0.95rem}
   .buttons { justify-content: center; }
   .section { padding: 40px 0; }
   .section .inner{grid-template-columns:1fr;gap:18px}
+
+  /* ---------------- Mobile-only colored blocks ---------------- */
+  /* Avatar in a red circular area (phone only) */
+  .avatar.container { display:flex; justify-content:center; width:100%; }
+
+  .avatar {
+    background: linear-gradient(180deg,#fecaca,#fee2e2); /* soft red */
+    width: 160px;
+    height: 160px;
+    border-radius: 999px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transform: translateY(0);
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    padding: 6px;
+  }
+
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 999px;
+    animation: none; /* disable floating on small screens for stable look */
+  }
+
+  /* Content (greeting) inside a green area (phone only) */
+  .content {
+    background: #dcfce7; /* soft green */
+    padding: 16px;
+    border-radius: 12px;
+    margin-top: 8px;
+    width: calc(100% - 36px);
+    box-shadow: 0 6px 18px rgba(3,7,18,0.04);
+  }
+
+  .content h1 { color: #065f46; margin-bottom: 6px; }
+  .content h2 { color: #065f46; opacity: 0.9 }
 }
 </style>
 </head>
@@ -269,9 +308,12 @@ footer{padding:40px 0;color:var(--muted);font-size:0.95rem}
       <div class="skills">
         <div class="skill">Python (basics)</div>
         <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript (fundamentals)</div>
         <div class="skill">Git & GitHub</div>
         <div class="skill">VS Code</div>
-        <div class="skill">NumPy (intro)</div>
+        <div class="skill">Jupyter Notebooks</div>
+        <div class="skill">NumPy & Pandas (intro)</div>
       </div>
     </div>
 
