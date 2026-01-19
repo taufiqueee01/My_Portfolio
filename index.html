@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taufique Ahmad | Student Developer</title>
+
+<style>
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ---------- BODY ---------- */
+body {
+  background: #ffffff;
+  color: #111827;
+  overflow-x: hidden;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+}
+
+/* ---------- TEXT ---------- */
+.content h1 {
+  font-size: 3.3rem;
+  font-weight: 800;
+}
+
+.content h1 span {
+  background: #facc15;
+  padding: 0 8px;
+}
+
+.content h2 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #374151;
+}
+
+.content p {
+  margin: 18px 0 30px;
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+/* ---------- HIGHLIGHT POINTS ---------- */
+.highlights {
+  margin-bottom: 30px;
+  color: #374151;
+}
+
+.highlights li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+/* ---------- BUTTONS ---------- */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background: #111827;
+  color: #ffffff;
+}
+
+.primary:hover {
+  transform: translateY(-4px);
+}
+
+.secondary {
+  border: 2px solid #111827;
+  color: #111827;
+}
+
+.secondary:hover {
+  background: #111827;
+  color: #ffffff;
+}
+
+/* ---------- AVATAR ---------- */
+.avatar {
+  transform: translateY(-30px); /* avatar slightly upper */
+}
+
+.avatar img {
+  width: 330px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ---------- FLOAT ANIMATION ---------- */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .avatar {
+    transform: translateY(0);
+  }
+
+  .avatar img {
+    margin-top: 35px;
+    width: 260px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="content">
+    <h1>Hi, I'm <span>Taufique Ahmad</span></h1>
+    <h2>Student Developer · Class 9</h2>
+
+    <p>
+      Learning <strong>Python</strong> for <strong>AI & Machine Learning</strong>.<br>
+      I build small but real projects and improve daily.
+    </p>
+
+    <ul class="highlights">
+      <li>✔ Active learner & consistent on GitHub</li>
+      <li>✔ Clean code & beginner-friendly projects</li>
+      <li>✔ Open to internships & learning opportunities</li>
+    </ul>
+
+    <div class="buttons">
+      <a href="#" class="btn primary">View Projects</a>
+      <a href="https://github.com/taufiqueee01" class="btn secondary">GitHub</a>
+    </div>
+  </div>
+
+  <div class="avatar">
+    <img src="https://github.com/taufiqueee01/assets/blob/main/my%20avtar.png?raw=true" alt="Developer Avatar">
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".content").style.opacity = "1";
+});
+</script>
+
+</body>
+</html>
