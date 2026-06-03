@@ -1,3 +1,18 @@
+Here is your complete, updated code. I have added **both** the "View Certificate" button in the top section AND the direct PDF embed section right above your skills. You can keep both, or remove the one you don't want.
+
+### 💡 A Quick Developer Pro-Tip Before You Copy:
+
+Your file name is `[English]_Complete_2026_Python_Bootcamp__Learn_Python_from_Scratch_Certificate.pdf`.
+In web development, spaces and brackets in file names can sometimes cause broken links when you upload your site to the internet.
+
+**It is highly recommended that you rename your file on your computer to something simple**, like:
+`python_bootcamp_certificate.pdf`
+
+*However, I have used your exact file name in the code below so it works immediately with what you have!*
+
+### Your Complete `index.html` Code:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -301,7 +316,6 @@ footer{
 
 <body>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
 
@@ -323,6 +337,7 @@ footer{
       <div class="buttons">
         <a href="https://github.com/taufiqueee01/Python_Projects" class="btn primary">View Projects</a>
         <a href="https://github.com/taufiqueee01" class="btn secondary">GitHub</a>
+        <a href="[English]_Complete_2026_Python_Bootcamp__Learn_Python_from_Scratch_Certificate.pdf" target="_blank" class="btn secondary">View Certificate</a>
       </div>
     </div>
 
@@ -333,7 +348,6 @@ footer{
   </div>
 </section>
 
-<!-- ABOUT -->
 <section class="section">
   <div class="container inner">
     <div>
@@ -359,7 +373,21 @@ footer{
   </div>
 </section>
 
-<!-- SKILLS -->
+<section class="section">
+  <div class="container">
+    <h3 style="font-size:1.25rem; margin-bottom:16px; font-weight:700;">My Certification</h3>
+    <p class="lead" style="margin-bottom: 20px;">Complete 2026 Python Bootcamp</p>
+    
+    <embed 
+      src="[English]_Complete_2026_Python_Bootcamp__Learn_Python_from_Scratch_Certificate.pdf" 
+      type="application/pdf" 
+      width="100%" 
+      height="600px" 
+      style="border-radius: 12px; border: 1px solid #e6e9ee; box-shadow: 0 4px 10px rgba(0,0,0,0.05);"
+    >
+  </div>
+</section>
+
 <section class="section">
   <div class="container inner">
     <div>
@@ -399,3 +427,5 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 </body>
 </html>
+
+```
